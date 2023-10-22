@@ -9,7 +9,7 @@ d=3.8
 
 arm = tinyik.Actuator(['z', [3.8, 0., 0.], 'z', [3.8, 0., 0.]])
 
-broker_address='67.253.32.232'
+broker_address=''
 def callback(source,user,message):
     print(message.payload.decode())
 client = mqtt.Client("kinematics")
